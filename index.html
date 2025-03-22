@@ -108,11 +108,11 @@
 					</figure>
 				</div>
 			</div>
-			<div id="services">
+			<div id="services" itemscope itemtype="https://schema.org/Service">
+				<meta itemprop="serviceType" content="Photography" />
 				<h2 class="title">Mes services</h2>
-				<div class="container" >
-					<div class="service" itemscope itemtype="https://schema.org/Service">
-						<meta itemprop="serviceType" content="Photography" />
+				<div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+					<div class="service" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
 						<div class="service__description">
 							<h3 itemprop="name">Shooting photo</h3>
 							<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -122,7 +122,7 @@
 							<span>Matériel, déplacement inclus</span>
 						</div>
 					</div>
-					<div class="service" itemscope itemtype="https://schema.org/Product">
+					<div class="service" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
 						<div class="service__description">
 							<h3 itemprop="name">Retouches</h3>
 							<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -132,7 +132,7 @@
 							<span>2 AR par photo</span>
 						</div>
 					</div>
-					<div class="service" itemscope itemtype="https://schema.org/Product">
+					<div class="service" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
 						<div class="service__description">
 							<h3 itemprop="name">Album photos</h3>
 							<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
