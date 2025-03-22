@@ -107,6 +107,20 @@ body {
 	background-color: #5F5926;
 	border-radius:0 ;
 }
+
+.nav-link:focus {
+	color: #fff;
+	background-color: #5F5926;
+	border-radius:0 ;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+		color: #fff;
+	background-color: #5F5926;
+	border-radius:0 ;
+}
+
 .nav-pills .nav-link {
 	color: #000
 }
@@ -194,7 +208,7 @@ body {
 	z-index: 1;
 }
 
-.service__price p {
+.service__price h4 {
 	font-size: calc(1.275rem + 0.3vw);
 	margin-bottom: 0.5rem;
 }
