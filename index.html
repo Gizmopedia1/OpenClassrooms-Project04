@@ -26,11 +26,36 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="./assets/maugallery.js"></script>
 		<script src="./assets/scripts.js"></script>
+		<script type="application/ld+json">
+			{
+			"@context": "https://schema.org/",
+			"@type": "ProfessionalService",
+			"serviceType": "Photography",
+			"provider": {
+				"@type": "LocalBusiness",
+				"name": "Nina Carducci",
+				"image": "./assets/images/nina.webp"
+			},
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"postalCode": "33200",
+				"addressLocality": "Bordeaux",
+				"addressCountry": "FR"
+			},
+			"openingHours": [
+				"Mo-Fr 10:00-19:00"
+			],
+			"priceRange": "$$",
+			"telephone": "+33556677889",
+			"url": "https://gizmopedia1.github.io/OpenClassrooms-Project04"
+		}
+		</script>
 	</head>
 	<body>
 		<nav>
 			<div class="top-header">
-				<h1 class="name">Nina Carducci</h1>
+				<div itemprop="provider" itemscope itemtype="https://schema.org/LocalBusiness"><h1 class="name" itemprop="name">Nina Carducci</h1></div>
 				<div class="nav">   
 					<ul>
 						<li><a href="#about">À propos</a></li>
