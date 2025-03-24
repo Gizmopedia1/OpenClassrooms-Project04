@@ -64,6 +64,14 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+    $(".gallery").on("keydown", function(event) {
+      if (event.key === "ArrowLeft") {
+        $.fn.mauGallery.methods.prevImage(options.lightboxId)
+      } else if (event.key === "ArrowRight") {
+      $.fn.mauGallery.methods.nextImage(options.lightboxId)
+      }
+    }
+    );
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
@@ -150,7 +158,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i - 1 ;
         }
       });
       next =
@@ -189,7 +197,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i + 1;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -240,7 +248,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
