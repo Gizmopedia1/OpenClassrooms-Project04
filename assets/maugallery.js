@@ -67,11 +67,11 @@
     $(".gallery").on("keydown", function(event) {
       if (event.key === "ArrowLeft") {
         $.fn.mauGallery.methods.prevImage(options.lightboxId)
-      } else if (event.key === "ArrowRight") {
+      }
+      if (event.key === "ArrowRight") {
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
       }
-    }
-    );
+    });
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
